@@ -4,6 +4,16 @@ A [Claude Skill](https://support.claude.com/en/articles/12512180-use-skills-in-c
 
 It never withholds the answer. The nudge is a wink, not a paywall.
 
+## Why
+
+When I was growing up, my dad would have me or my twin brother hold a comb in the carburetor to get the car started on cold Sudbury mornings. As we got older it became a pen, and by eighth grade it was bare fingers while he revved the engine to life and we checked that we still had all ten.
+
+He spent his career 7,200 feet underground mining nickel. He's 80 and still working — and still fixing just about anything with his own ingenuity, the kind of competence you build when "call a guy" was never an option.
+
+I build with AI for a living, and I've noticed that the better our tools get at answering, the easier it becomes to stop asking the people who'd give anything to hear from us. So I made this. You answer ten questions about your father, and from then on, when you ask Claude something he'd know cold — how to fix it, where to go, what to watch — it stops you: *he's got this one, want to call him first?* Then it helps you anyway.
+
+The nudge was never about the answer. It was about the call.
+
 ## How it works
 
 1. **You run a short survey.** Ten quick questions about your dad — what he did for a living, what he's weirdly good at, what he'll lecture you about until your phone dies.
@@ -23,10 +33,9 @@ The survey is all this skill does. The nudging happens on its own afterward, dri
 This is the skill's natural home, because the nudges rely on Claude's persistent memory across conversations.
 
 1. **Enable code execution first.** Free / Pro / Max: **Settings → Capabilities → Code execution and file creation**. Team / Enterprise: an admin enables **Organization settings → Skills**. (If the Skills menu looks greyed out, this is why — it's not your plan.)
-2. Download this repo (**Code → Download ZIP**) and unzip it.
-3. Re-zip the `call-your-dad` folder so that **`SKILL.md` sits at the top level of the zip**.
-4. In Claude, go to **Customize → Skills**, click **+**, choose **Create skill → Upload a skill**, and upload that zip.
-5. Toggle it on. Uploaded isn't the same as enabled.
+2. **[Download call-your-dad.zip](https://github.com/devlavigne/call-your-dad/raw/main/call-your-dad.zip)** — it's already packaged the way Claude expects, no unzipping or re-zipping needed.
+3. In Claude, go to **Customize → Skills**, click **+**, choose **Create skill → Upload a skill**, and upload the zip.
+4. Toggle it on. Uploaded isn't the same as enabled.
 
 Then just say **"Call Your Dad"** in any conversation to run the survey.
 
